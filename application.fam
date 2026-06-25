@@ -1,0 +1,59 @@
+App(
+    appid="network_rpc",
+    name="[RPC] Network",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="network_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    order=36,
+    fap_icon="network_10px.png",
+    fap_category="Tools",
+    fap_author="@apfxtech",
+    fap_version="1.0",
+    fap_description="Checks internet access through the companion device over RPC (Network API).",
+)
+
+App(
+    appid="network_ping_1_1_1_1",
+    name="[RPC] Ping 1.1.1.1",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="network_ping_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    order=37,
+    fap_icon="network_10px.png",
+    fap_category="Tools",
+    fap_author="@apfxtech",
+    fap_version="1.0",
+    fap_description="Shows ping-like RTT output for 1.1.1.1 through the companion Network API.",
+)
+
+App(
+    appid="network_bad_apple",
+    name="[RPC] Bad Apple",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="network_bad_apple_app",
+    requires=["gui"],
+    stack_size=8 * 1024,
+    order=38,
+    fap_icon="network_10px.png",
+    fap_category="Tools",
+    fap_author="@apfxtech",
+    fap_version="1.0",
+    fap_description="Downloads Bad Apple 128x64 GIF to SD and streams it to the display.",
+)
+
+App(
+    appid="network_websocket",
+    name="[RPC] WebSocket Echo",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="network_websocket_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    order=39,
+    fap_icon="network_10px.png",
+    fap_category="Tools",
+    fap_author="@apfxtech",
+    fap_version="1.0",
+    fap_description="Echoes the device name through wss://echo.websocket.org and shows TX/RX stats.",
+)
