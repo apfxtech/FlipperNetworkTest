@@ -44,13 +44,28 @@ App(
 )
 
 App(
+    appid="network_bad_apple_save",
+    name="[RPC] Bad Apple (save)",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="network_bad_apple_save_app",
+    requires=["gui"],
+    stack_size=8 * 1024,
+    order=39,
+    fap_icon="network_10px.png",
+    fap_category="Tools",
+    fap_author="@apfxtech",
+    fap_version="1.0",
+    fap_description="Has the companion save Bad Apple 128x64 GIF to SD via save_path, then plays it.",
+)
+
+App(
     appid="network_websocket",
     name="[RPC] WebSocket Echo",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="network_websocket_app",
     requires=["gui"],
     stack_size=4 * 1024,
-    order=39,
+    order=40,
     fap_icon="network_10px.png",
     fap_category="Tools",
     fap_author="@apfxtech",
